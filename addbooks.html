@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+
+<head>
+	<title> AddBooks </title>
+	<style>
+	</style>
+	
+	<script src="validateBook.js"></script> 
+</head>
+
+<body style="background-color: #f2f2f2;">
+<center>
+<h1 style = "border-bottom-style : solid ; margin-top : 30px "> <em> Enter the details of book !! </em></h1>
+
+<form name="book" onsubmit= " return validateForm() ">
+<table >
+
+<tr> 
+	<td> <h5> Book Id <label style = " color : red " >*</label> : </h5></td>
+	<td> <input type="text" placeholder="Book Id" id="bId">  </td>
+</tr>
+
+<tr> 
+	<td> <h5> Category :</h5> </td>
+	<td> <select id="bCatg" >
+		<option value="admin"> Science </option>
+		<option value="Entertainment"> Entertainment </option>
+		<option value="story"> Story </option>
+		<option value="Social"> Social </option>
+		<option value="Fun"> Fun </option>
+	</td>
+</tr>
+
+<tr> 
+	<td> <h5> Language : </h5></td>
+	<td>    <input type="radio" name="bLang">English
+		<input type="radio"  name="bLang">Tamil
+		<input type="radio"  name="bLang">Hindi
+	</td>
+</tr>
+
+
+<tr> 
+	<td> <h5> Book Name <label style = " color : red " >*</label> :</h5> </td>
+	<td> <input type="text" placeholder="Book Name" id="bName">  </td>
+</tr>
+
+<tr> 
+	<td> <h5> Author :</h5> </td>
+	<td> <input type="text" placeholder="Author" id="bAuthor">  </td>
+</tr>
+
+<tr> 
+	<td> <h5> Price <label style = " color : red " >*</label> :</h5> </td>
+	<td> <input type="text" placeholder="Price" id="bPrice">  </td>
+</tr>
+<tr>
+<td> <a href="file:///D:/training/Mini%20Project/home.html" >Home</a></td> <td> <input type="submit" value="submit"> </td>
+</tr>
+</form>
+
+</table>
+</center>
+</body>
+
+</html>
