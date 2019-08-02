@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>login</title>
+<title>Register</title>
 </head>
 <style>
 
@@ -12,8 +12,7 @@
 }
 
 #head{
-	margin-left : 260px;
-	margin-top : 80px;
+	margin-left : 330px;
 	font-family: sans-serif;
 }
 
@@ -35,7 +34,7 @@ input[type=text], input[type=password] {
 
 div{
 	background-color: #f2f2f2;
-	height:260px;
+	height:230px;
 	width:380px;
 	border-radius: 10px;
 	margin-left : 330px;
@@ -53,17 +52,19 @@ input[type=submit]{
 
 
 </style>
-<body>
+<body style="margin-top : 70px;">
 
-<b><h1 id="head"> Welcome to our Organisation !! </h1> </b> 
+<b><h1 id="head"> Sign Up </h1> </b>
+<h4 id="head"> Please fill this form to create an account </h4>
+
 <div>
 
 <form action="login" id="form">
 
-<input type="text" name="username" placeholder="Enter UserName"><br><br>
-<input type="text" name="password" placeholder="Enter Password"><br><br>
-<input type="submit" value="login"><br><br>
-<a href="http://localhost:9080/Organisation/register.html">New user? Click here!!</a>
+<input type="text" name="username" placeholder="Set UserName" required><br><br>
+<input type="text" name="password" placeholder="Set Password" required><br><br>
+<input type="submit" value="Sign Up"><br><br>
+
 
 </form>
 
