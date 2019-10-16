@@ -1,0 +1,32 @@
+<form [formGroup]="employeeForm" novalidate (ngSubmit)="submit()" >  
+     <br>
+
+        <div class="panel-heading" style="margin-left: 15px"  >
+            <h3> Enter your credentials </h3>
+        </div> <br> <br>
+
+        <div class="form-group col-md-8 " [ngClass]= " {'has-error' : employeeForm.get('username').errors && (
+            employeeForm.get('username').touched || employeeForm.get('username').dirty) } " >
+            <label>UserName</label>
+            <input type="text" class="form-control" id="name" formControlName="username" placeholder="Enter Username" >
+            <span class="text-danger" id="valid-name" *ngIf="employeeForm.touched && employeeForm.get('username').errors?.required">
+                Name is required
+            </span>
+        </div>
+
+        <br>
+
+        <div class="form-group col-md-8" [ngClass]= " {'has-error' : employeeForm.get('password').errors && (
+            employeeForm.get('password').touched || employeeForm.get('password').dirty) } ">
+            <label>Password</label>
+            <input type="password" class="form-control" id="email" formControlName="password" placeholder="Enter Password">
+            <span class="text-danger" id="valid-email" *ngIf="employeeForm.touched && employeeForm.get('password').errors?.required">
+                password is required
+            </span>
+        </div>
+        
+        <div style="margin-left: 15px">
+            <button type="submit" [disabled]="!employeeForm.valid" id="submit" class="btn btn-primary btn-sm">Submit</button>
+        </div>
+    
+</form>
